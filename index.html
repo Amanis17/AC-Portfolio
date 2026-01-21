@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adan Correa | Portfolio</title>
+    <meta name="description" content="Portfolio website showcasing projects, experience, and skills in web development." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+        <nav class="nav container" aria-label="Primary">
+            <a class="brand" href="#top">
+                <span class="brand-dot" aria-hidden="true"></span>
+                <span>Adan Correa</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+                <span class="sr-only">Toggle navigation</span>
+                <span aria-hidden="true">☰</span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#contact">Contact</a>
+
+                <button class="btn btn-ghost" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    🌙
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero container" aria-label="Intro">
+            <div class="hero-text">
+                <p class="eyebrow">Web Developer • IT Graduate</p>
+                <h1>Building practical, clean web experiences with <span class="accent">HTML, CSS, and JavaScript</span>.</h1>
+                <p class="lead">
+                    I’m an IT graduate with hands-on experience delivering technical solutions.
+                    Here are projects and proof of skills — not just buzzwords.
+                </p>
+
+                <div class="hero-cta">
+                    <a class="btn" href="#projects">View Projects</a>
+                    <a class="btn btn-ghost" href="#contact">Contact Me</a>
+                </div>
+
+                <div class="hero-links" aria-label="External links">
+                    <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="#" target="_blank" rel="noreferrer">Resume (PDF)</a>
+                </div>
+            </div>
+
+            <div class="hero-card" role="img" aria-label="Profile card">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                    <p class="card-title">Adan Correa</p>
+                    <p class="card-subtitle">Frontend • JavaScript • UI</p>
+                    <p class="card-note">Open to roles • Houston, TX</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section container" id="about">
+            <div class="section-head">
+                <h2>About</h2>
+                <p>Short and recruiter-readable — what you do and what you’re looking for.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Who I am</h3>
+                    <p>
+                        I’m a recent IT graduate who enjoys building interactive, accessible websites.
+                        I focus on clean UI, reusable components, and strong fundamentals in JavaScript.
+                    </p>
+                    <p>
+                        I like projects that connect real user needs to practical code: dashboards, tools, automations, and data views.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>What I bring</h3>
+                    <ul class="list">
+                        <li>Solid HTML semantics + responsive layouts</li>
+                        <li>Modern CSS (flex/grid) + clean UI patterns</li>
+                        <li>JavaScript interactivity + DOM + state</li>
+                        <li>Readable code, good naming, and maintainable structure</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section container" id="skills">
+            <div class="section-head">
+                <h2>Skills</h2>
+                <p>Tools and strengths — simple and scannable.</p>
+            </div>
+
+            <div class="chips">
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3</span>
+                <span class="chip">JavaScript (ES6+)</span>
+                <span class="chip">Responsive Design</span>
+                <span class="chip">Accessibility</span>
+                <span class="chip">Git/GitHub</span>
+                <span class="chip">REST APIs</span>
+                <span class="chip">JSON</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section container" id="projects">
+            <div class="section-head">
+                <h2>Projects</h2>
+                <p>Work samples that demonstrate your skills. Filter by type.</p>
+            </div>
+
+            <div class="filters" role="toolbar" aria-label="Project filters">
+                <button class="filter is-active" data-filter="all" type="button">All</button>
+                <button class="filter" data-filter="frontend" type="button">Frontend</button>
+                <button class="filter" data-filter="tools" type="button">Tools</button>
+                <button class="filter" data-filter="api" type="button">API</button>
+            </div>
+
+            <div class="projects" id="projectGrid">
+                <!-- Project Card -->
+                <article class="project card" data-tags="frontend">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive site with theme toggle, filters, and accessible UI patterns.</p>
+                    <div class="meta">
+                        <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JS</span>
+                    </div>
+                    <div class="actions">
+                        <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">Live</a>
+                        <a class="btn btn-ghost btn-small" href="#" target="_blank" rel="noreferrer">Code</a>
+                    </div>
+                </article>
+
+                <article class="project card" data-tags="tools">
+                    <h3>Task Tracker</h3>
+                    <p>CRUD app with localStorage, sorting, and validation. Built with vanilla JS.</p>
+                    <div class="meta">
+                        <span class="pill">JavaScript</span><span class="pill">LocalStorage</span>
+                    </div>
+                    <div class="actions">
+                        <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">Live</a>
+                        <a class="btn btn-ghost btn-small" href="#" target="_blank" rel="noreferrer">Code</a>
+                    </div>
+                </article>
+
+                <article class="project card" data-tags="api frontend">
+                    <h3>Weather Dashboard</h3>
+                    <p>Fetches data from an API, displays forecasts, handles loading + error states.</p>
+                    <div class="meta">
+                        <span class="pill">Fetch</span><span class="pill">API</span><span class="pill">UI</span>
+                    </div>
+                    <div class="actions">
+                        <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">Live</a>
+                        <a class="btn btn-ghost btn-small" href="#" target="_blank" rel="noreferrer">Code</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="section container" id="experience">
+            <div class="section-head">
+                <h2>Experience</h2>
+                <p>Highlight outcomes, not just duties.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item card">
+                    <div class="timeline-top">
+                        <h3>Technical Support / Implementation</h3>
+                        <span class="muted">2024 — Present</span>
+                    </div>
+                    <p>
+                        Supported customers by diagnosing issues, documenting solutions, and improving workflows.
+                        Collaborated with cross-functional teams to resolve problems efficiently.
+                    </p>
+                    <ul class="list">
+                        <li>Wrote clear technical notes and issue summaries</li>
+                        <li>Improved troubleshooting consistency with reusable steps</li>
+                        <li>Worked directly with stakeholders to validate fixes</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item card">
+                    <div class="timeline-top">
+                        <h3>IT Graduate Projects</h3>
+                        <span class="muted">School</span>
+                    </div>
+                    <p>
+                        Built web projects focusing on fundamentals: responsive layout, DOM manipulation, and API usage.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section container" id="contact">
+            <div class="section-head">
+                <h2>Contact</h2>
+                <p>Make it easy. One click to copy your email.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Reach out</h3>
+                    <p class="muted">Email is best. I respond within 1–2 business days.</p>
+
+                    <div class="contact-row">
+                        <span class="label">Email</span>
+                        <span class="value" id="emailText">adan@example.com</span>
+                        <button class="btn btn-small" id="copyEmail" type="button">Copy</button>
+                    </div>
+
+                    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+                </div>
+
+                <form class="card" id="contactForm" novalidate>
+                    <h3>Send a message</h3>
+
+                    <label>
+                        Name
+                        <input type="text" name="name" autocomplete="name" required minlength="2" />
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" autocomplete="email" required />
+                    </label>
+
+                    <label>
+                        Message
+                        <textarea name="message" rows="5" required minlength="10"></textarea>
+                    </label>
+
+                    <button class="btn" type="submit">Submit</button>
+                    <p class="form-hint muted" id="formHint">This form validates locally (no backend). Hook it to EmailJS later if you want.</p>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer container">
+            <p class="muted">© <span id="year"></span> Adan Correa. Built with HTML/CSS/JS.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
